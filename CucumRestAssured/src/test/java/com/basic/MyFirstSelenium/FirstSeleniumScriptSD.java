@@ -23,7 +23,7 @@ public class FirstSeleniumScriptSD {
 	@When("^user click on \"([^\"]*)\" tab$")
 	public void user_click_on_Project_tab(String tabName){
 		System.out.println("tab name = "+tabName);
-		driver.findElement(By.xpath("")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Projects')]")).click();
 	}
 	
 	@Then("^user checks About tab$")

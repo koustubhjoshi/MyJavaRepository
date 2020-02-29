@@ -39,7 +39,7 @@ public class RegistrationDetails {
 	public void user_navigate_to_registration_form() throws InterruptedException  {
 	    // Write code here that turns the phrase above into concrete actions
 		 driver.findElement(By.xpath("//a/img[@id='enterimg']")).click();
-		 Thread.sleep(2000);
+		 Thread.sleep(1000);
 	}
 
 	@Then("^User enters details$")
@@ -94,38 +94,38 @@ public class RegistrationDetails {
 		country1.selectByVisibleText("India");
 	}
 	
-	@Given("^Verify title of the page$")
+	@When("^Verify title of the page$")
 	public void verify_title_of_the_page() {
 	    // Write code here that turns the phrase above into concrete actions
 	 String actual = driver.getTitle();
-	 String expected = "Regiter";
+	 String expected = "Register";
 	 Assert.assertEquals(actual, expected);
 	 System.out.println("Actual title = "+ actual + "Expected title = " + expected);
 	}
 
-//	@Given("^User provide attachment$")
-//	public void user_provide_attachment() throws InterruptedException, AWTException {
-//	    // Write code here that turns the phrase above into concrete actions
-//		driver.findElement(By.xpath("//div/input[@type='file']"));
-//		Thread.sleep(2000);
-//		StringSelection ss = new StringSelection("D:\\Radical Institute\\Attachments\\SamplePic.jpeg");
-//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-//		Robot robot =new Robot();
-//		Thread.sleep(2000);
-//		robot.keyPress(KeyEvent.VK_CONTROL);
-//		robot.keyPress(KeyEvent.VK_V);
-//		
-//		robot.keyRelease(KeyEvent.VK_CONTROL);
-//		robot.keyRelease(KeyEvent.VK_V);
-//		
-//		Thread.sleep(2000);
-//		
-//		robot.keyPress(KeyEvent.VK_ENTER);
-//		robot.keyRelease(KeyEvent.VK_ENTER);
-//		Thread.sleep(2000);
-//		
-//		System.out.println("User attachment done");
-//	}
+	@Given("^User provide attachment$")
+	public void user_provide_attachment() throws InterruptedException, AWTException {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.xpath("//div/input[@type='file']"));
+		Thread.sleep(2000);
+		StringSelection ss = new StringSelection("D:\\Radical Institute\\Attachments\\SamplePic.jpeg");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		Robot robot =new Robot();
+		Thread.sleep(2000);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+		
+		Thread.sleep(2000);
+		
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		System.out.println("User attachment done");
+	}
 
 	
 	

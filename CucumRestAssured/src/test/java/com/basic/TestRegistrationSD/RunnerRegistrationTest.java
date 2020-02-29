@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		
 		features= {"src/test/resources/com/basic/TestRegistrationFF/RegistrationDetails.feature",
-				//"src/test/resources/com/basic/TestRegistrationFF/FileAttched.feature",
+				"src/test/resources/com/basic/TestRegistrationFF/FileAttched.feature",
 				"src/test/resources/com/basic/TestRegistrationFF/PageTitle.feature"},
 		glue={"com/basic/TestRegistrationSD/"},
 		//dryRun = true,

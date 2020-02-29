@@ -41,7 +41,7 @@ public class YahooLoginPassSD {
 		driver.findElement(By.xpath("//div/input[@id='login-signin']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div/input[@id='login-passwd']")).sendKeys(Pass);
-		
+	   	
 	}	
 
 }
