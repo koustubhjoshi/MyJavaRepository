@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6177" started-at="2020-02-15T08:05:21Z" finished-at="2020-02-15T08:05:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6177" started-at="2020-02-15T08:05:21Z" finished-at="2020-02-15T08:05:28Z">
+      <class name="com.basic.MyGoogleRestAssured.BasicsOfRestAssured">
+        <test-method status="PASS" signature="TestF1()[pri:0, instance:com.basic.MyGoogleRestAssured.BasicsOfRestAssured@16c48ac]" name="TestF1" duration-ms="3368" started-at="2020-02-15T13:35:21Z" finished-at="2020-02-15T13:35:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestF1 -->
+        <test-method status="PASS" signature="TestGoogle()[pri:0, instance:com.basic.MyGoogleRestAssured.BasicsOfRestAssured@16c48ac]" name="TestGoogle" duration-ms="2764" started-at="2020-02-15T13:35:25Z" finished-at="2020-02-15T13:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestGoogle -->
+      </class> <!-- com.basic.MyGoogleRestAssured.BasicsOfRestAssured -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
